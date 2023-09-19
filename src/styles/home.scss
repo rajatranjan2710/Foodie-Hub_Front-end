@@ -1,0 +1,92 @@
+@import 'colors';
+
+.home {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+
+    .left {
+        // border: 1px solid black;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >div {
+           
+
+            >h1 {
+                font-size: 4rem;
+                text-transform: uppercase;
+            }
+
+            >p {
+                padding-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+            a {
+                display: block;
+                margin: 1rem auto;
+                width: 10rem;
+                border: 1px solid black;
+                background-color: $red;
+                color: white;
+                text-align: center;
+                border: none;
+                font-size: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+                padding: 0.8rem;
+    
+                &:hover {
+                    background-color: rgb(219, 12, 46);
+                }
+            }
+        }
+
+        
+    }
+    .right{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .banner{
+            width: 400px;
+            >img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .home{
+        flex-direction: column-reverse;
+        .left{
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem;
+            >div{
+                >h1{
+                    text-align: center;
+                    font-size: 3.5rem;
+                }
+                >p{
+                    text-align: center;
+                }
+                >a{
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .right{
+            width: 100%;
+            margin-top: 2rem;
+            // border: 1px solid red;
+        }
+    }    
+}

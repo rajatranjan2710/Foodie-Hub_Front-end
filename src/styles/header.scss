@@ -1,0 +1,116 @@
+@import "colors";
+
+nav {
+    // position: sticky;
+    // top: 0;
+    width: 100%;
+    height: 4.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: $pink;
+
+    .icon {
+        display: flex;
+        align-items: center;
+
+        svg {
+            color: $red;
+            font-size: 3rem;
+        }
+    }
+
+    .routes {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: $dark;
+            margin: 0 1.5rem;
+            transition: 0.3s all;
+
+            &:hover {
+                color: $lightdark;
+            }
+
+            >svg {
+                color: $red;
+                font-size: 1.5rem;
+                transition: inherit;
+
+                &:hover {
+                    color: $lightdark;
+                }
+
+            }
+        }
+    }
+
+    .dropdown {
+        display: none;
+        >button {
+            >svg {
+                font-size: 2rem;
+                outline: none;
+                color: $dark;
+            }
+
+        }
+
+    }
+    @media screen and (max-width: 600px) {
+
+        height: 5.5rem;
+    
+        .icon{
+            svg{
+                font-size: 3rem;
+                color: $dark;
+            }
+            
+        }
+        .routes {
+            display: none;
+        }
+    
+        .dropdown {
+            display: block;
+            >button{
+                position: absolute;
+                top: 1.5rem;
+                right: 3rem;
+            }
+        }
+
+        .drop-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            transition: max-height 0.3s ease-in-out;
+            position: absolute;
+            max-width: 600px;;
+            top: 10vh;
+            // max-height: 0; 
+            left: 0;
+            // border: 1px solid black;
+            width: 100%;
+            z-index: 2;
+            border-radius: 10px;
+            background-color: white;
+
+            a{
+                margin: 1rem 0;
+                font-size: 1.5rem;
+            }
+          
+    
+        }
+        
+    
+    };
+}
+
+

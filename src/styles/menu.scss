@@ -1,0 +1,83 @@
+@import 'colors';
+
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    padding: 4rem;
+    >h1{
+        text-align: center;
+        padding: 2rem;
+    }
+    >div{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+.menuCard{
+    background-color: white;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 2rem;
+    >div{
+        border-radius: 20px 20px 0 0;
+        background-color: $pink;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        height: 4rem;
+    }
+    >main{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >img{
+            height: 10rem;
+            width: 100%;
+            object-fit: contain;
+        }
+        >h5{
+            margin: 0.5rem;
+            font-size: 1.5rem;
+        }
+        >p{
+            text-transform: uppercase;
+            padding-bottom: 1rem ;
+        }
+        >button{
+            width: 6rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            background-color: $red;
+            border: none;
+            color: white;
+            transition: all 0.3 sec ease-in;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .menu{
+        >div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .menuCard{
+        width: 100%;
+        margin: 2rem 0;
+        >div{
+            height: 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import 'colors';
+
+.founder{
+    height: 90vh;
+    width: 100vw;
+    background-color: $pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .avatar{
+        // height: 250px;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid white;
+        >img{
+            object-fit: contain;
+            width:200px;
+            // height: 80%;
+            border-radius: 50%;
+        }
+        >h3{
+            width: 250px;
+            text-align: center;
+            padding-top: 1rem ;
+            padding-bottom: 0.5rem;
+        }
+        >p{
+            width: 250px;
+            padding: 0.3rem 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .avatar{
+        // border: 1px solid red;
+        >h3{
+            font-size: 2rem;
+            margin-top: 1.5rem ;
+        }
+        >p{
+            font-size: 1rem;
+        }
+    }
+}

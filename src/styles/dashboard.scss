@@ -1,0 +1,88 @@
+@import 'colors';
+
+.dashboard{
+    // min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-color: $pink;
+    >main{
+        max-width: 900px;
+        height: 100%;
+        margin: auto;
+        background-color: white;
+        >article{
+            background-color: $dark;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-evenly;
+            >div{
+                background-color: white;
+                height: 120px;
+                width: 120px;
+                border-radius: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        >section{
+            width: 100%;
+            display: flex;
+            >div{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                text-align: center;
+                align-items: center;
+                margin-top: 2rem;
+                // border: 1px solid black;
+                justify-content: center;
+                >a{
+                    background-color: $dark;
+                    padding: 0.9rem 1.2rem;
+                    width: 40%;
+                    margin: 1rem auto;
+                    color: white;
+                    border-radius: 10px;
+                }
+            }
+            >aside{
+                width: 50%;
+                // height: 50%;
+                // border: 1px solid red;
+                padding: 4rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .dashboard{
+        height: 145vh;
+        >main{
+            >article{
+                flex-direction: column;
+                align-items: center;
+                >div{
+                    margin: 1rem 0;
+                }
+            }
+            >section{
+                flex-direction: column-reverse;
+                >div{
+                    width: 100%;
+                    margin-top: 0.2rem;
+                }
+                >aside{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 500px;
+                    // border: 1px solid red;
+                    padding: 2rem 2rem;
+                }
+            }
+        }
+    }
+}

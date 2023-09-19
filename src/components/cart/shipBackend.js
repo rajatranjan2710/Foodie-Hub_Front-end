@@ -1,0 +1,7 @@
+// shippingInfo,
+//     orderItems,
+//     paymentMethod,
+//     itemsPrice,
+//     taxPrice,
+//     shippingCharges,
+//     totalAmount,
