@@ -12,7 +12,7 @@ const Footer = () => {
 
             </div>
             <div className='righs'>
-                <strong>All rights reserved @foodiehub</strong>
+                <strong>Made with love💗 by Rajat Ranjan</strong>
             </div>
 
             <aside>
