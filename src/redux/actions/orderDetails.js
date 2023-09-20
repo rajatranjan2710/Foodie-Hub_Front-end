@@ -1,6 +1,6 @@
 import axios from "axios";
 import { server } from "../store";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 
 export const orderDetails = () => async (dispatch) => {
 

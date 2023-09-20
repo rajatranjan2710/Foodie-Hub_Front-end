@@ -1,8 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { authReducer } from "./reducers/authReducer";
-import { carttReducer, getAllOrders, getOrderReducer, orderDetailsReducer, orderReducer } from "./reducers/carttReducer";
-import { processReducer } from "./reducers/processReducer";
-import { adminReducer } from "./reducers/adminStats";
+import { carttReducer,  orderReducer } from "./reducers/carttReducer";
+
+import { getAllOrdersReducer,processReducer} from "./reducers/adminOrdersReducer";
+
+import { adminStatsReducer, adminUserReducer } from "./reducers/adminStatsReducer";
+import { getOrderReducer, orderDetailsReducer } from "./reducers/orderDetailsReducer";
 
 const store = configureStore({
     reducer:{
@@ -11,9 +14,10 @@ const store = configureStore({
         order: orderReducer,
         details:orderDetailsReducer,
         getOrder:getOrderReducer,
-        getAllOrders : getAllOrders,
+        getAllOrders : getAllOrdersReducer,
         processOrder : processReducer,
-        adminStats : adminReducer
+        adminStats : adminStatsReducer,
+        getUsers : adminUserReducer
     },
 });
 

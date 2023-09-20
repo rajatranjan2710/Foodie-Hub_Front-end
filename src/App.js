@@ -43,7 +43,7 @@ import { loadUser } from './redux/actions/userAction';
 import toast from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
 import { ProtectedRoute } from 'protected-route-react';
-import AdminOrderDetails from './components/admin/AdminOrderDetails';
+
 
 
 
@@ -96,7 +96,6 @@ function App() {
         <Route path="/admin/dashboard" element={<Dashboard />} />
         <Route path="/admin/users" element={<Users />} />
         <Route path="/admin/orders" element={<Orders />} />
-        <Route path='/admin/order/:id' element={<AdminOrderDetails/>}/>
       </Route>
 
     </Routes>

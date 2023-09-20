@@ -56,7 +56,7 @@ const ConfirmOrder = () => {
         else{
             toast.error("Comming soon")
         }
-        console.log(extractedCartData)
+        // console.log(extractedCartData)
         // console.log(cartObject);
     }
 
